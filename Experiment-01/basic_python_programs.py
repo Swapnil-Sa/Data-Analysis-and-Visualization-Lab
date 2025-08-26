@@ -1,6 +1,6 @@
 """
 Experiment 01: Basic Python Programs
------------------------------------
+
 This script demonstrates:
 1. Arithmetic Operations
 2. String Manipulation
@@ -9,9 +9,8 @@ This script demonstrates:
 (with user input)
 """
 
-# -------------------------------
 # 1. Arithmetic Operations
-# -------------------------------
+
 def arithmetic_operations(a, b):
     print("\nArithmetic Operations:")
     print(f"Addition: {a} + {b} = {a + b}")
@@ -22,10 +21,8 @@ def arithmetic_operations(a, b):
     print(f"Exponentiation: {a} ** {b} = {a ** b}")
     print("-" * 40)
 
-
-# -------------------------------
 # 2. String Manipulation
-# -------------------------------
+
 def string_manipulation(text):
     print("\nString Manipulation:")
     print(f"Original text: {text}")
@@ -37,9 +34,8 @@ def string_manipulation(text):
     print("-" * 40)
 
 
-# -------------------------------
 # 3. Conditional Statements
-# -------------------------------
+
 def check_number(num):
     print("\nConditional Statements:")
     if num > 0:
@@ -51,9 +47,8 @@ def check_number(num):
     print("-" * 40)
 
 
-# -------------------------------
 # 4. Loop Structures
-# -------------------------------
+
 def loop_examples(n):
     print("\nLoop Structures:")
 
@@ -77,26 +72,23 @@ def loop_examples(n):
     print("-" * 40)
 
 
-# -------------------------------
 # Main function
-# -------------------------------
+
 if __name__ == "__main__":
     print("=== Experiment 01: Basic Python Programs ===")
 
-    # Take user input for arithmetic operations
     a = int(input("\nEnter first number: "))
     b = int(input("Enter second number: "))
     arithmetic_operations(a, b)
 
-    # Take user input for string manipulation
+   
     text = input("\nEnter a string: ")
     string_manipulation(text)
 
-    # Take user input for conditional statement
     num = int(input("\nEnter a number to check (positive/negative/zero): "))
     check_number(num)
 
-    # Take user input for loops
+
     n = int(input("\nEnter a number for loop demonstrations: "))
     loop_examples(n)
 

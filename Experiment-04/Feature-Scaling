@@ -1,0 +1,28 @@
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
+# Load dataset
+file_path = "/content/sample_data/california_housing_test.csv"
+df = pd.read_csv(file_path)
+
+print("Original Data (first 5 rows):\n")
+print(df.head())
+
+# Select only numerical features for scaling
+features = df.select_dtypes(include=['float64', 'int64'])
+
+# ---------- Min-Max Scaling ----------
+minmax_scaler = MinMaxScaler()
+features_minmax = pd.DataFrame(minmax_scaler.fit_transform(features),
+                               columns=features.columns)
+
+print("\nData after Min-Max Scaling (first 5 rows):\n")
+print(features_minmax.head())
+
+# ---------- Standardization (Z-score Normalization) ----------
+standard_scaler = StandardScaler()
+features_standard = pd.DataFrame(standard_scaler.fit_transform(features),
+                                 columns=features.columns)
+
+print("\nData after Standardization (first 5 rows):\n")
+print(features_standard.head())

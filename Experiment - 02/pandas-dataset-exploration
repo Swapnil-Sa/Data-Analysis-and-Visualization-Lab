@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Load the dataset
+file_path = "/content/sample_data/california_housing_test.csv"
+df = pd.read_csv(file_path)
+
+# Display first 5 rows
+print("First 5 rows of dataset:\n")
+print(df.head())
+
+# Display information about dataset (columns, data types, non-null values)
+print("\nDataset Info:\n")
+print(df.info())
+
+# Display statistical summary of numerical columns
+print("\nStatistical Summary:\n")
+print(df.describe())

@@ -7,6 +7,3 @@ Write basic Python programs to perform:
 - Conditional statements
 - Loop structures
 
-## How to Run
-```bash
-python basic_python_programs.py

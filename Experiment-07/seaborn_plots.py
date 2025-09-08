@@ -18,9 +18,6 @@ plt.savefig("boxplot.png")
 plt.show()
 print("Boxplot saved as boxplot.png")
 
-# -------------------------------
-# Violin Plot: Median Income vs. Median House Value
-# -------------------------------
 plt.figure(figsize=(10, 6))
 sns.violinplot(x="housing_median_age", y="median_income", data=df, inner="quartile", palette="muted")
 plt.title("Violin Plot of Median Income by Housing Median Age")

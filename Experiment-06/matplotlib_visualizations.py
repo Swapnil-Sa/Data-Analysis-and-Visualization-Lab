@@ -29,5 +29,11 @@ plt.savefig("line_graph.png")
 plt.show()   # 👈 Show chart
 print(" Line Graph Saved as line_graph.png")
 
+# Pie Chart
+df["housing_median_age"].value_counts().head(6).plot.pie(
+    autopct="%1.1f%%", startangle=90, figsize=(6,6))
+plt.title("Distribution of Housing Median Age")
+plt.savefig("pie_chart.png")
+plt.show()
 
 print("\nAll visualizations created, saved, and displayed successfully!")

@@ -29,16 +29,5 @@ plt.savefig("line_graph.png")
 plt.show()   # 👈 Show chart
 print(" Line Graph Saved as line_graph.png")
 
-household_bins = pd.cut(df["households"], bins=5)
-pie_data = household_bins.value_counts().sort_index()
-
-plt.figure(figsize=(6, 6))
-pie_data.plot(kind="pie", autopct="%1.1f%%", startangle=90,
-              colors=["#ff9999", "#66b3ff", "#99ff99", "#ffcc99", "#c2c2f0"])
-plt.ylabel("")
-plt.title("Distribution of Households (Binned)")
-plt.savefig("pie_chart.png")
-plt.show()   
-print(" Pie Chart Saved as pie_chart.png")
 
 print("\nAll visualizations created, saved, and displayed successfully!")

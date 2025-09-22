@@ -5,3 +5,6 @@ Implement **K-Means clustering** to segment housing data into groups,
 determine the **cluster centroids**, and **visualize the results**.  
 This experiment helps in understanding how unsupervised learning can 
 group similar data points without using target labels.
+
+## Dataset
+The dataset used is the **California Housing Training Dataset** provided in Google Colab 

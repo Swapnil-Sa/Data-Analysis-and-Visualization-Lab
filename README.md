@@ -12,7 +12,7 @@ CO3: Apply statistical and machine learning techniques for data analysis.
 CO4: Utilize visualization techniques for better interpretation of data.
 
 CO5: Implement data analytics techniques using Python/R.
-
+ 
 
 
 | S.No | Experiment                                                                                                                      | Course Outcome |
